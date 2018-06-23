@@ -1,0 +1,71 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let post of posts">
+      <ion-card>
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+        <ion-card-content>
+          <ion-card-title>
+              {{ post.titulo }}
+            </ion-card-title>
+          <p>{{ post.body }}</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small (tap)="likeComment($event)">
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>{{likes}} Like(s)</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+          <div>
+            <form ngIf="postComment">
+              <ion-list>
+                <ion-item>
+                  <ion-label fixed>Mensagem</ion-label>
+                  <ion-input type="text" [(ngModel)]="mensagem"></ion-input>
+                </ion-item>
+              </ion-list>
+              <button ion-button full>Comentar</button>
+            </form>
+          </div>
+          <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<footer></footer>

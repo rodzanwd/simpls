@@ -1,0 +1,77 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form (submit)="editaUser()">
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_digite_seu_nome.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="nome" name="nome" [value]="nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_digite_seu_email.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_cinza_data_de_nascimento.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="data_nasc" name="data_nasc"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_telefone.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="celular" name="celular"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_escolaridade.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="escolaridade" name="escolaridade"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_situacao_profissional.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="profissao" name="profissao"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <img src="assets/imgs/icone_azul_renda.png" />
+        </ion-label>
+        <ion-input [(ngModel)]="renda" name="renda"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button>Salvar</button>
+  </form>
+
+</ion-content>
+
+<footer></footer>
+ 

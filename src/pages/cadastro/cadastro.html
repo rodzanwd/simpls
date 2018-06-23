@@ -1,0 +1,37 @@
+<ion-header class="casal">
+  <img id="loginFacebook" src="../assets/imgs/login_com_facebook.png">
+</ion-header>
+  
+<ion-content padding text-center>
+  
+  <form class="formCadastro" (ngSubmit)="cadastro()" #formCadastro="ngForm">
+    <ion-item class="iconesFom">
+      <ion-label>
+        <img src="../assets/imgs/icone_cinza_digite_seu_nome.png">
+      </ion-label>
+      <ion-input placeholder="Digite seu nome" [(ngModel)]="nomeCompleto" name="nomeCompleto" type="text" required></ion-input> 
+    </ion-item>
+    <ion-item class="iconesFom">
+      <ion-label>
+        <img src="../assets/imgs/icone_cinza_digite_seu_email.png">
+      </ion-label>
+      <ion-input placeholder="Email" [(ngModel)]="email" name="email" type="email" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesFom">
+      <ion-label>
+        <img src="../assets/imgs/icone_cinza_senha.png">
+      </ion-label>
+      <ion-input placeholder="Senha" [(ngModel)]="password" name="password" type="password" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesFom">
+      <ion-label>
+        <img src="../assets/imgs/icone_cinza_senha.png">
+      </ion-label>
+      <ion-input placeholder="Confirme sua senha" [(ngModel)]="confirmaSenha" name="confirmaSenha" type="password" required></ion-input>
+    </ion-item>
+    <button class="btCriarConta">
+      <img id="criarConta" src="../assets/imgs/criar_conta.png">
+    </button>
+  </form>
+
+</ion-content>

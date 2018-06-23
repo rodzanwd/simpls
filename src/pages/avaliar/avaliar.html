@@ -1,0 +1,49 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding center text-center>
+  <h3>ESCREVA SUA OPINIÃO</h3>
+  <form id="opiniao">
+      <div>
+        <ion-textarea placeholder="Digite aqui a sua dúvida" rows="10"></ion-textarea>
+      </div>
+    <ion-grid>
+      <ion-row>
+        <div col-1></div>
+        <div col-3 class="avaliacao">
+            <img class="img_btn" src="assets/imgs/icone_otimo.png"> <input type="radio" /> <span>Ótimo</span>
+        </div>
+        <div col-3 class="avaliacao">
+            <img class="img_btn" src="assets/imgs/icone_bom.png"> <input type="radio" /> <span>Bom</span>
+        </div>
+        <div col-3 class="avaliacao">
+            <img class="img_btn" src="assets/imgs/icone_ruim.png"> <input type="radio" /> <span>Ruim</span>
+        </div>
+      </ion-row>
+    </ion-grid>
+    
+    <img class="img-rodape" src="assets/imgs/enviar.png">
+  </form>
+</ion-content>
+
+<footer></footer>

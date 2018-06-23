@@ -1,0 +1,38 @@
+page-cadastro-aviso1 {
+
+    .content{
+        margin-top: 0;
+    }
+    
+    .cadastro1 {
+        background: -moz-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(183,204,32,1)), color-stop(17%, rgba(183,204,32,1)), color-stop(100%, rgba(234,229,54,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* ie10+ */
+        background: linear-gradient(2deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7cc20', endColorstr='#eae536',GradientType=0 ); /* ie6-9 */
+    }
+
+    .cadastro1 img {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 1.8rem;
+        margin-bottom: 70px;
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    button > span {
+        font-size: 2.5rem;
+    }
+}

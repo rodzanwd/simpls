@@ -1,0 +1,74 @@
+page-avaliar {
+    //variaveis
+    $color: #a1a1a1;
+    
+    //mixins
+    @mixin border-radius($radius){
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        border-radius: $radius;
+        border: solid #ccc 1px;
+    }
+
+    @mixin input-placeholder {
+        &.placeholder { @content; }
+        &:-moz-placeholder { @content; }
+        &::-moz-placeholder { @content; }
+        &:-ms-input-placeholder { @content; }
+        &::-webkit-input-placeholder { @content; }
+    }
+
+    //estilos 
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color;
+        margin-left: 15px;
+    }
+
+    .text-input{
+        @include border-radius(5px);
+        @include input-placeholder {
+            font-size: 1.2rem;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        min-height: 30px;
+    }
+
+    #opiniao.item-ios.item-block .item-inner{
+        border-bottom: none !important;
+    }
+
+    [col-1] {
+        margin-right :15px !important;
+    }
+
+    .avaliacao img{
+        width: 20px;
+    }
+
+    .avaliacao {
+        line-height: 10px;
+        padding-bottom: 10px;
+        height: 100%;
+        min-height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    input[type=radio]{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .img-rodape {
+        width: 70%;
+    }
+}

@@ -1,0 +1,86 @@
+page-carrinho {
+
+    $border: solid 1px #a1a1a1;
+
+    .content {
+        color: #a1a1a1;
+    }
+    
+    .search {
+        width: 98%;
+        height: 35px;
+        border-radius: 5px;
+        margin-left:1%;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #a1a1a1;
+        font-weight: bold;
+        border: 0;
+    }
+
+    .imagens {
+        margin-top: -20px;
+    }
+
+    .img-carrinho {
+        margin-top: 2px;
+        margin-left: -26px;
+        max-width: 120%;
+    }
+
+    .img-lista {
+        margin-top: 2px;
+        margin-left: -5px;
+        max-width: 120%;
+    }
+
+    .carrinho {
+        border-bottom: $border;
+        border-top: $border;
+        margin-top: 20px;
+        margin-left: -16px;
+        width: 109%;
+    }
+
+    .col p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .col .nome{
+        font-weight: bold;
+    }
+
+    .col .marca{
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    .col .stars {
+        padding-left: 0;
+    }
+
+    .col .precos {
+        margin-top: 10px;
+    }
+
+    .col .preco-total-produto {
+        border: $border;
+        border-radius: 5px;
+        margin-top: 17px;
+    }
+
+    .col .preco-total-produto .col {
+        padding: 0;
+    }
+
+    .col .preco-total-produto .preco-total-valor {
+        padding-top: 7px;
+        font-size: 1.6rem;
+    }
+
+    .valor-total-compra {
+        position: fixed;
+        bottom: 80px;
+    }
+}

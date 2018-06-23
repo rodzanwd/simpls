@@ -34,7 +34,7 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #f2f2f2,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -86,3 +86,14 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+ion-navbar .toolbar-background, .toolbar-background-ios, .toolbar-background-md{
+  background: -moz-linear-gradient(360deg, rgba(255,108,109,1) 0%, rgba(255,26,157,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,108,109,1)), color-stop(100%, rgba(255,26,157,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(360deg, rgba(255,108,109,1) 0%, rgba(255,26,157,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(360deg, rgba(255,108,109,1) 0%, rgba(255,26,157,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(360deg, rgba(255,108,109,1) 0%, rgba(255,26,157,1) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(255,108,109,1) 0%, rgba(255,26,157,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6c6d', endColorstr='#ff1a9d',GradientType=1 ); /* ie6-9 */
+      
+}

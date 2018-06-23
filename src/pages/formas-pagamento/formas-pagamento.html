@@ -1,0 +1,91 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-3>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-6 text-center>
+            <h3>FORMAS DE PAGAMENTO</h3>
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-3 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="img-cartao">
+          <ion-col col-4>
+              <img src="assets/imgs/perfil/formas-de-pagamento/logo-visa.png">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-9>
+            <ion-row class="stars">
+              <ion-col col-3>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+              <ion-col col-3>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+              <ion-col col-3>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+              <ion-col col-3>
+                  2886
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col col-3>
+            <ion-row class="checked">
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="nome" col-9>
+            {{ nome }}
+          </ion-col>
+          <ion-col class="validade" col-3>
+            <span>VALIDADE</span>
+            <div class="clear"></div>
+            <p>12/18</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3></ion-col>
+      <ion-col col-6>
+          <img class="cartao" src="assets/imgs/perfil/formas-de-pagamento/adicionar_novo_cartao.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="margin-bottom-130"></div>
+</ion-content>
+
+<footer></footer>

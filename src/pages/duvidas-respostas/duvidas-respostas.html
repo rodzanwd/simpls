@@ -1,0 +1,90 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="perguntas">
+      <ion-segment-button value="perguntas-gerais" (click)="isFalse()">
+        Todas as perguntas
+      </ion-segment-button>
+      <ion-segment-button value="minhas-perguntas" (click)="isFalse()">
+        Suas perguntas
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-card *ngIf="isTrue">
+    <ion-grid class="pergunta">
+      <ion-row>
+          <ion-col col-2><img src="assets/imgs/icone_pergunta.png"></ion-col>
+          <ion-col col-10><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="resposta">
+      <ion-row>
+          <ion-col col-2><img right text-right src="assets/imgs/icone_resposta.png"></ion-col>
+          <ion-col col-10><p>PERGUNTAS GERAIS - Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <div padding>
+    <!-- Perguntas do usuário -->
+    <div [ngSwitch]="perguntas">
+      <ion-card *ngSwitchCase="'perguntas-gerais'">
+        <ion-grid class="pergunta">
+          <ion-row>
+              <ion-col col-2><img src="assets/imgs/icone_pergunta.png"></ion-col>
+              <ion-col col-10><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+          </ion-row>
+        </ion-grid>
+        <ion-grid class="resposta">
+          <ion-row>
+              <ion-col col-2><img right text-right src="assets/imgs/icone_resposta.png"></ion-col>
+              <ion-col col-10><p>PERGUNTAS GERAIS - Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      <!-- Perguntas gerais -->
+      <ion-card *ngSwitchCase="'minhas-perguntas'">
+        <ion-grid class="pergunta">
+          <ion-row>
+              <ion-col col-2><img src="assets/imgs/icone_pergunta.png"></ion-col>
+              <ion-col col-10><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+          </ion-row>
+        </ion-grid>
+        <ion-grid class="resposta">
+          <ion-row>
+              <ion-col col-2><img right text-right src="assets/imgs/icone_resposta.png"></ion-col>
+              <ion-col col-10><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p></ion-col>          
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+  </div>
+  <img src="assets/imgs/faca_sua_pergunta.png" (click)="facaSuaPergunta()">
+  
+</ion-content>
+
+<footer></footer>

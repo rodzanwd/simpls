@@ -1,0 +1,167 @@
+page-perfil {
+
+    $color: #a1a1a1;
+
+    $border: solid 1px $color;
+
+    @mixin borderRadius($radius){
+        border: $border;
+        -webkit-border-radius: $radius!important;
+        -moz-border-radius: $radius !important;
+        border-radius: $radius !important;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .borderRadius{
+        @include borderRadius(5px);
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: $color;
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: $color;
+        font-size: 2rem;
+    }
+
+    span {
+       font-size: 1.2rem;
+    }
+    
+    .search {
+        width: 98%;
+        height: 35px;
+        border-radius: 5px;
+        margin-left:1%;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: $color;
+        font-weight: bold;
+        border: 0;
+    }
+
+    .divider {
+        border-top: solid 1px #CCCCCC;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        color: $color;
+    }
+
+    span {
+        font-size: 1.4rem;
+        color: $color;
+    }
+
+    .central-de-ajuda img{
+        width: 80px; 
+    }
+
+    .label-md, .label-ios {
+        padding-right: 15px; 
+    }
+
+    ion-label img{
+        max-height: 30px;
+        max-width: 23px;
+        margin-right: 20px;
+        padding-right: 5px;
+    }
+
+    ion-label {
+        font-size: 1.6rem;
+    }
+
+    ion-label span {
+        padding-bottom: 10px;
+    }
+
+    .img-rodape {
+        margin-top: 2px;
+        margin-bottom: 50px;
+        margin-left: -50px;
+        max-width: 130%;
+    }
+
+    //perfil
+
+    .divider-perfil {
+        border-top: solid 1px #CCCCCC;
+        padding-top: 10px;
+        margin-bottom: 5px;
+        color: $color;
+    }
+
+    .grid-perfil{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        color: $color;
+    }
+
+    .grid-perfil div {
+        line-height: 10px;
+        padding-bottom: 10px;
+        height: 100%;
+        min-height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        
+    }
+
+    .grid-perfil .item-text {
+        margin-top:8px;
+    }
+
+    .grid-perfil .item-destaque{
+        font-weight: bold !important;
+    }
+
+    .grid-perfil.last div{
+        border-bottom: none;
+    }
+
+    .grid-perfil div img {
+        max-height: 30px;
+        max-width: 23px;
+        padding-right: 5px;
+        margin-left:0;
+    }
+
+    //minha conta
+
+    .grid-layout{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        color: $color;
+    }
+
+    .grid-layout div {
+        border-bottom: $border;
+    }
+
+    .grid-layout .item-text {
+        margin-top:5%;
+    }
+
+    .grid-layout.last div{
+        border-bottom: none;
+    }
+
+    .grid-layout div img {
+        max-height: 39px;
+        max-width: 30px;
+        padding-right: 5px;
+    }
+
+    
+}

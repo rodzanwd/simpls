@@ -1,0 +1,21 @@
+page-duvidas-respostas {
+    .pergunta p{
+        font-weight: bold;
+        font-size: 1.0rem;
+        text-align: justify;
+    }
+
+    .pergunta img {
+        max-width: 40px;
+    }
+
+    .resposta p{
+        font-weight: normal;
+        font-size: 1.0rem;
+        text-align: justify;
+    }
+
+    .resposta img {
+        max-width: 20px;
+    }
+}

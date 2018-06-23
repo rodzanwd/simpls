@@ -1,0 +1,54 @@
+<ion-header class="headerCadastro2" text-center>
+  <h3>COMPLETE SEU ENDEREÇO</h3>
+</ion-header>
+ 
+<ion-content padding class="cadastro_tela2" text-center>
+   
+  <div class="busca">
+      <ion-label>
+          <img src="../assets/imgs/icone_cinza_cep.png">
+        </ion-label>
+    <ion-searchbar type="tel" [(ngModel)]="cep" (ionInput)="getEndereco()" placeholder="Digite seu cep"></ion-searchbar>
+  </div>
+  
+  <form class="formCadastro" (ngSubmit)="concluiCadastro()" #formCadastro="ngForm">
+    <ion-item class="iconesForm">
+      <ion-label>
+        <img src="../assets/imgs/icone_cinza_endereco.png">
+      </ion-label>
+      <ion-input placeholder="Endereço" [(ngModel)]="rua" name="rua"  type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesForm">
+      <ion-input placeholder="Complemento" [(ngModel)]="complemento" name="complemento" type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesForm">
+      <ion-input placeholder="Número" [(ngModel)]="numero" name="numero" type="number" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesForm">
+      <ion-input placeholder="Bairro" [(ngModel)]="bairro" name="bairro" type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesForm">
+      <ion-input placeholder="Cidade" [(ngModel)]="cidade" name="cidade" type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="iconesForm">
+      <ion-input placeholder="uf" [(ngModel)]="uf" name="uf" type="text" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6 (click)="imgResidencialEhTrue()">
+            <img src="../assets/imgs/cadastro/residencial_cinza.png" *ngIf="!residencialTrue">
+            <img src="../assets/imgs/cadastro/residencial_azul.png" *ngIf="residencialTrue">
+          </ion-col>
+          <ion-col col-6 (click)="imgTrabalhoEhTrue()">
+            <img class="img-trabalho" src="../assets/imgs/cadastro/trabalho_cinza.png" *ngIf="!trabalhosTrue">
+            <img class="img-trabalho" src="../assets/imgs/cadastro/trabalho_azul.png" *ngIf="trabalhosTrue">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <button class="btCriarConta">
+        <img id="criarConta" src="../assets/imgs/criar_conta.png">
+    </button>
+  </form>
+</ion-content>

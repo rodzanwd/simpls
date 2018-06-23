@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+    public navCtrl: NavController
+  ) {
 
+  }
+
+  public goBack() {
+    this.navCtrl.pop();
   }
 
 }

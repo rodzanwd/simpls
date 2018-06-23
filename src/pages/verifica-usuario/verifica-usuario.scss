@@ -1,0 +1,32 @@
+$background: #6271ff;
+$fonte: #ffffff;
+$align-center: center;
+
+
+page-verifica-usuario {
+
+    .verificaUsuario{
+        background-color: $background;
+        color: $fonte;
+        text-align: $align-center;
+        font-size: 1.8rem;
+    }
+    
+    .verificaUsuario h1{
+        margin-top: 30px !important;
+    }
+
+    .verificaUsuario img {
+        max-width: 200px;
+        margin-top: 50px;
+    }
+
+    .verificaUsuario #imgCadastro {
+        max-width: 250px;
+    }
+
+    .content {
+        margin-top:0px;
+    }
+
+}

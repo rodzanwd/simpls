@@ -1,0 +1,16 @@
+<div class="slide">
+  <!-- Loop do produto -->
+  <div class="row">
+    <div class="row__inner">
+      <div class="tile" *ngFor="let product of products">
+        <div class="item">
+          <div class="tile__media">
+              <img src="{{product.imagem}}" (click)="selecionaProduto(product)">
+            </div>
+            <h3>{{ product.nome }}</h3>
+            <img src="assets/imgs/adicionar.png" (click)="adicionaProduto(product)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

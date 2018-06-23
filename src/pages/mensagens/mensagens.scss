@@ -1,0 +1,69 @@
+page-mensagens {
+
+    .content {
+        margin-top:0;
+    }
+
+    ion-segment {
+        background-color: #ffffff;
+    }
+
+    .segment {
+        margin-left: -20px;
+        width: 110%;
+    }
+
+    .toolbar-ios .segment-button, .toolbar-md .segment-button {
+        max-width: 30em; 
+        height: 2.6rem;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        padding: 30px;
+        background-color: #6670fb;
+        float: right;
+    }
+
+    .segment-ios .segment-button.segment-activated {
+        color: #585757;
+        background-color: #ffffff;
+        opacity: 1;
+        -webkit-transition: 100ms all linear;
+        transition: 100ms all linear;
+    }
+
+    .mensagem .row {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: solid 1px #585757;
+    }
+
+    ion-toolbar h3 {
+        font-size: 1rem;
+    }
+    
+    .stars {
+        float: right;
+    }
+
+    .star-yellow {
+        color: #f8f500;
+    }
+
+    .item {
+        padding-left: 0;
+    }
+
+    h4, p, span,.star-grey {
+        color: #585757;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    .item p {
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 20px;
+    }
+}

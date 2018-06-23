@@ -1,0 +1,87 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="">
+        <h3>COMO FUNCIONA</h3>
+        <br />
+        <iframe src="https://www.youtube.com/embed/WzYA4rv41jg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="divider"></div>
+        <h3><img src="assets/imgs/info-simpls/central_de_atendimento.png" /> CENTRAL DE ATENDIMENTO</h3>
+        <br />
+        <table class="table-central-de-ajuda">
+          <tr (click)="irParaDuvidas()">
+            <td><img src="assets/imgs/perfil/duvidas_e_respostas.png" /></td>
+            <td>Queremos ouvir você, deixe sua opinião</td>
+          </tr>
+        </table>
+        <div class="divider"></div>
+        <div class="central-de-ajuda">
+            <br />
+            <h3>CENTRAL DE AJUDA</h3>
+            <br />
+            <table class="table-central-de-ajuda">
+              <!--tr (click)="irParaDuvidas()">
+                <td><img src="assets/imgs/perfil/duvidas_e_respostas.png" /></td>
+                <td>Dúvidas e Respostas</td>
+              </tr-->
+              <tr (click)="irParaTermos()">
+                <td><img src="assets/imgs/perfil/duvidas_e_respostas.png" /></td>
+                <td>Termos e Condições</td>
+              </tr>
+              <tr (click)="irParaPerguntasFrequentes()">
+                <td><img src="assets/imgs/perfil/perguntas_frequentes.png" /></td>
+                <td>Perguntas Frequentes</td>
+              </tr>
+              <tr (click)="irParaPolitica()">
+                <td><img src="assets/imgs/perfil/queremos_ouvir_sua_opiniao.png" /></td>
+                <td>Política de Privacidade</td>
+              </tr>
+              <!--tr (click)="irParaAvaliacao()">
+                <td><img src="assets/imgs/perfil/queremos_ouvir_sua_opiniao.png" /></td>
+                <td>Queremos ouvir você, deixe sua opinião!</td>
+              </tr-->
+            </table>
+            <br />
+          </div>
+          <div class="divider"></div>
+          <div class="central-de-ajuda">
+            <br />
+            <table class="table-central-de-ajuda">
+              <tr>
+                <a href="http//simpes.me">
+                  <td><img src="assets/imgs/info-simpls/entregador_simpls.png" /></td>
+                  <td>Como ser entregador Simpls</td>
+                </a>
+              </tr>
+            </table>
+            <br />
+          </div>
+      </div>
+      <a href="http//simpes.me">
+        <img class="img-rodape" src="assets/imgs/perfil/banner_site.png">
+      </a>
+      <div class="margin-bottom-130"></div>
+</ion-content>
+
+<footer></footer>

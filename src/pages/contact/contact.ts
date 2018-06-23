@@ -11,4 +11,8 @@ export class ContactPage {
 
   }
 
+  public goBack() {
+    this.navCtrl.pop();
+  }
+
 }

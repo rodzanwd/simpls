@@ -1,0 +1,27 @@
+$background: #6271ff;
+$fonte: #ffffff;
+$align-center: center;
+
+page-welcome {
+    .welcome{
+        background-color: $background;
+        color: $fonte;
+        text-align: $align-center;
+        font-size: 1.8rem;
+    }
+
+    .welcome img {
+        max-width: 150px;
+        margin-top:80px;
+        margin-bottom: 100px;
+    }
+
+    .content {
+        margin-top:0px;
+    }
+
+    ion-footer {
+        opacity: 0 !important;
+        display: none !important;
+    }
+}

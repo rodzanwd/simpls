@@ -1,0 +1,84 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Como alterar meu cadastro?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Como alterar meu email de acesso?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Como alterar minha senha de acesso?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Quais as formas de pagamento aceitas?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Posso agendar minha entrega?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Como faço para receber ofertas?</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Política de troca e devolução</ion-label>
+    <ion-select>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <h3 text-center center>Ainda com dúvidas?</h3>
+  <form>
+    <ion-item id="duvida">
+      <ion-textarea placeholder="Digite aqui a sua dúvida" rows="3"></ion-textarea>
+    </ion-item>
+    <img class="img-rodape" src="assets/imgs/faca_sua_pergunta.png">
+  </form>
+
+</ion-content>
+
+<footer></footer>

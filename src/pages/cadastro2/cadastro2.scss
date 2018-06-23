@@ -1,0 +1,132 @@
+page-cadastro2 {
+
+    .content{
+        margin-top: 0;
+    }
+
+    .headerCadastro2{
+        height: 70px;
+        background: -moz-linear-gradient(45deg, rgba(80,65,252,1) 0%, rgba(63,52,192,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(80,65,252,1)), color-stop(100%, rgba(63,52,192,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(45deg, rgba(80,65,252,1) 0%, rgba(63,52,192,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(45deg, rgba(80,65,252,1) 0%, rgba(63,52,192,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(45deg, rgba(80,65,252,1) 0%, rgba(63,52,192,1) 100%); /* ie10+ */
+        background: linear-gradient(45deg, rgba(80,65,252,1) 0%, rgba(63,52,192,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f34c0', endColorstr='#5041fc',GradientType=1 ); /* ie6-9 */
+    }
+
+    .headerCadastro2 h3 {
+        margin-top: 35px;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+    .cadastro_tela2, ion-label {
+        color: #292d96;
+    }
+
+    #loginFacebook {
+        width: 240px;
+        margin-top: 180px;
+    }
+
+    // CEP
+
+    .busca{
+        position: relative;
+    }
+
+    .busca ion-label {
+        width:10%;
+        position: absolute;
+        top:9px;
+        left:53px;
+        z-index: 99999;
+        border-right: 1px solid #CCCCCC; 
+        padding-right: 15px;
+    }
+
+
+    ion-searchbar {
+        width:80%;
+        float:right;
+        margin-right:35px;
+        border: 1px solid #CCCCCC;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding-right: 50px;
+    }
+
+    .searchbar-search-icon {
+        display:none;
+    }
+
+    .searchbar-input-container {
+        margin-left: 45px;
+    }
+
+
+    .searchbar-ios {
+        background: none !important;
+    }
+
+    // Fim CEP
+
+    .formCadastro {
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .iconesForm{
+        width: 270px;
+        height: 25px;
+        border: 1px solid #CCCCCC;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        box-shadow: 0px 2px 3px 0px rgba(204,204,204,1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+
+    .iconesForm .label-md, .iconesForm  .label-ios {
+        border-right: 1px solid #CCCCCC; 
+        padding-right: 15px; 
+    }
+
+    ion-label img {
+        max-height: 30px;
+        max-width: 23px;
+    }
+
+    ion-col img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    ion-col img.img-trabalho{
+        max-height: 87%;
+        max-width: 87%;
+    }
+
+    ion-input, ion-search {
+        font-size: 1.3rem;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+
+    #criarConta {
+        width:200px;
+        margin-top: 20px;
+    }
+
+    .btCriarConta {
+        background-color: white;
+    }
+}

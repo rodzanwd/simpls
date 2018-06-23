@@ -1,0 +1,7 @@
+cordova plugin add cordova-plugin-ionic --save --variable APP_ID="63e2995b" --variable CHANNEL_NAME="Master" --variable UPDATE_METHOD="background"
+
+ionic cordova plugin add cordova-sqlite-storage
+
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="334265017093513" --variable APP_NAME="Simpls.me"
+
+npm install --save @ionic-native/facebook

@@ -1,0 +1,122 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="divider-perfil">
+    <div class="grid-perfil">
+      <div class="item-1" text-center><img class="perfil" src="assets/imgs/icone_azul_digite_seu_nome.png" /> <span class="item-text">{{ this.nome }}</span></div>
+      <div class="item-text item-2"></div>
+      <div class="item-text tem-3" text-center></div>
+    </div>
+    <div class="grid-perfil">
+        <div class="item-1" text-center><img class="perfil" src="assets/imgs/icone_azul_endereco.png" /> <span class="item-text">Endereço Completo</span></div>
+        <div class="item-text item-2"></div>
+        <div class="item-text tem-3" text-center></div>
+      </div>
+    <div class="grid-perfil" (click)="irParaPedidos()">
+      <div class="item-1" text-center><img class="perfil" src="assets/imgs/pedidos_realizados.png" /> <span class="item-text">Pedidos realizados</span></div>
+      <div class="item-text item-2"></div>
+      <div class="item-3 item-destaque" text-right>Ver todos ></div>
+    </div>
+  </div>
+  <!--ion-list class="divider">
+    <ion-item no-lines>
+      <img src="assets/imgs/icone_azul_digite_seu_nome.png" /> <span>{{this.nome}}</span>
+    </ion-item>
+    <ion-item no-lines>
+      <img src="assets/imgs/icone_azul_endereco.png" /> <span style="margin-right: 100px;">{{this.endereco}}</span> <span>ALTERAR ></span>
+    </ion-item>
+    <ion-item no-lines>
+      <img src="assets/imgs/pedidos_realizados.png" /> <span style="margin-right: 40px;">Pedidos realizados</span> <span>Ver todos ></span>
+    </ion-item>
+  </ion-list>
+
+  <div class="divider">
+    <h3>Clube de Pontos</h3>
+    <br />
+    200 Pontos
+    <br /><br />
+    <img src="assets/imgs/perfil/compartilhe.png" (click)="shareApp()">
+  </div>
+
+  <div class="divider central-de-ajuda">
+    <h3>Central de Ajuda</h3>
+    <br />
+    <table class="table-central-de-ajuda">
+      <tr>
+        <td><img src="assets/imgs/perfil/duvidas_e_respostas.png" /></td>
+        <td>Dúvidas e Respostas</td>
+      </tr>
+      <tr>
+        <td><img src="assets/imgs/perfil/queremos_ouvir_sua_opiniao.png" /></td>
+        <td>Queremos ouvir você, deixe sua opinião!</td>
+      </tr>
+    </table>
+  </div-->
+  
+  <div class="divider">
+  <h3>Minha Conta</h3>
+  <br />
+
+  <div class="borderRadius">
+    <div class="grid-layout" (click)="selecionaPerfil(perfil)">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/editar_configuracoes.png" /> </div>
+      <div class="item-text item-2">Editar Configurações</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+    <div class="grid-layout" (click)="irParaMensagens()">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/caixa_de_mensagem.png" /> </div>
+      <div class="item-text item-2">Caixa de Mensagem</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+    <div class="grid-layout" (click)="irFormasPagamento()">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/formas_de_pagamento.png" /> </div>
+      <div class="item-text item-2">Formas de Pagamento</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+    <div class="grid-layout" (click)="enderecosCadastrados()">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/enderecos_cadastrados.png" /> </div>
+      <div class="item-text item-2">Endereços Cadastrados</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+    <div class="grid-layout" (click)="notificacoes()">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/notificacoes.png" /> </div>
+      <div class="item-text item-2">Notificações</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+    <div class="grid-layout last" (click)="logout()">
+      <div class="item-1" text-center><img src="assets/imgs/perfil/sair.png" /> </div>
+      <div class="item-text item-2">Sair</div>
+      <div class="item-text tem-3" text-center>></div>
+    </div>
+  </div>
+</div>
+
+  <div class="clear"></div>
+  <br /><br />
+
+  <img class="img-rodape" src="assets/imgs/rodape.png" alt="">
+
+</ion-content>
+
+<footer></footer>

@@ -14,3 +14,79 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// estilos globais
+
+//variaveis
+$cor-branca: #FFFFFF;
+
+//mixins
+@mixin back-lienar-1 {
+    background: -moz-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(183,204,32,1)), color-stop(17%, rgba(183,204,32,1)), color-stop(100%, rgba(234,229,54,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(88deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* ie10+ */
+    background: linear-gradient(2deg, rgba(234,229,54,1) 0%, rgba(183,204,32,1) 83%, rgba(183,204,32,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7cc20', endColorstr='#eae536',GradientType=0 ); /* ie6-9 */
+}
+
+//navbar
+ion-navbar{
+    height: 70px;
+}
+ion-navbar img {
+    max-width: 100%;
+}
+//h3
+ion-header h3 {
+    margin-top: 0.5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+//btn voltar
+.voltar {
+    width: 30%;
+}
+//buttons
+.alert-ios .alert-button {
+    color: #464545;
+    background-color: transparent;
+  }
+//cart
+.icon-cart {
+    color: $cor-branca;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+//label
+ion-label {
+    white-space: normal !important;
+}
+
+//content
+
+.content {
+    
+}
+
+
+.clear{
+    clear: both;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-70 {
+    margin-bottom: 70px;
+}
+
+.margin-bottom-130 {
+    margin-bottom: 130px;
+}
+
+

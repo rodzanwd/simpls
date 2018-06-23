@@ -1,0 +1,136 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            <img src="assets/imgs/logo_topo.png">
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="isTrue">
+    <ion-grid class="imagens">
+      <ion-row>
+        <ion-col col-6>
+          <img class="img-carrinho" src="assets/imgs/carrinho/seu_carrinho_hover.png">
+        </ion-col>
+        <ion-col col-6>
+            <img class="img-lista" src="assets/imgs/carrinho/lista.png" (click)="lista()">
+          </ion-col>
+      </ion-row>
+      <img src="assets/imgs/carrinho/caixa.png">
+    </ion-grid>
+    <ion-grid class="carrinho">
+      <ion-row *ngFor="let produto of produtos">
+        <ion-col col-3>
+          <img src="{{ produto.imagem }}">
+        </ion-col>
+        <ion-col col-5>
+          <p class="nome">{{ produto.nome }}</p>
+          <p class="marca"><em>{{ produto.marca }}</em></p>
+          <ion-col class="stars" col-6>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </ion-col>
+          <div class="precos">
+              <span class="preco-de">De: R$ {{ produto.precoDe }}</span>
+              <p class="preco-por">POR: R$ {{ produto.precoPor }}</p>
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <ion-row>
+            <ion-col col-3><img src="assets/imgs/carrinho/menos.png"></ion-col>
+            <ion-col col-6><span>1</span> UN.</ion-col>
+            <ion-col col-3><img src="assets/imgs/carrinho/mais.png"></ion-col>
+            <div class="clear"></div>
+            <div class="preco-total-produto">
+              <ion-row>
+                <ion-col col-3 class="preco-total">
+                  <img src="assets/imgs/carrinho/valor_total.png">
+                </ion-col>
+                <ion-col col-9 text-center>
+                  <p class="preco-total-valor">R$ 46,37</p>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="valor-total-compra">
+      <ion-row>
+        <ion-col col-9>
+          <p>VALOR TOTAL DA COMPRA</p>
+        </ion-col>
+        <ion-col col-3>
+          <p><strong>R$ 146,25</strong></p>
+        </ion-col>
+        <div class="clear"></div>
+        <ion-col col-9>
+          <p>FRETE</p>
+        </ion-col>
+        <ion-col col-3>
+          <p><strong>R$ 7,59</strong></p>
+        </ion-col>
+        <div class="clear"></div>
+        <ion-col col-6></ion-col>
+        <ion-col col-1 text-right>
+          <img src="assets/imgs/carrinho/total_geral.png"> 
+        </ion-col>
+        <ion-col col-2>
+            TOTAL
+          </ion-col>
+        <ion-col col-3>
+          <p><strong>R$ 7,59</strong></p>
+        </ion-col>
+        <div class="clear"></div>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+  <div *ngIf="!isTrue">
+    <ion-grid class="imagens">
+      <ion-row>
+        <ion-col col-6>
+          <img class="img-carrinho" src="assets/imgs/carrinho/seu_carrinho.png" (click)="carrinho()">
+        </ion-col>
+        <ion-col col-6>
+            <img class="img-lista" src="assets/imgs/carrinho/lista_hover.png">
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row *ngFor="let produto of produtos">
+        <ion-col col-4>
+          <h3>Aqui é a lista</h3>
+          <p>Marca</p>
+          <p>Estrelas</p>
+          <p>Preço De</p>
+          <p>Preço Por</p>
+          <!--img src="data:image/jpg;base64,{{produto.imagem}}"-->
+          <h3>{{produto.produto}}</h3>
+          <p>{{produto.quantidade}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<footer></footer>

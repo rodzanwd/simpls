@@ -1,1 +1,12 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<!-- menu -->
+<ion-menu [content]="content">
+
+<ion-content>
+    <ion-list nolines>
+        <ion-item *ngFor="let cat of categories">{{cat.nome}}</ion-item>
+    </ion-list>
+</ion-content>
+
+</ion-menu>
+<!-- nav -->
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,36 @@
+page-continua-cadastro{
+    .continuaCadastro {
+        background: -moz-linear-gradient(88deg, rgba(0,135,191,1) 0%, rgba(36,78,155,1) 76%, rgba(36,78,155,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(36,78,155,1)), color-stop(24%, rgba(36,78,155,1)), color-stop(100%, rgba(0,135,191,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(88deg, rgba(0,135,191,1) 0%, rgba(36,78,155,1) 76%, rgba(36,78,155,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(88deg, rgba(0,135,191,1) 0%, rgba(36,78,155,1) 76%, rgba(36,78,155,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(88deg, rgba(0,135,191,1) 0%, rgba(36,78,155,1) 76%, rgba(36,78,155,1) 100%); /* ie10+ */
+        background: linear-gradient(2deg, rgba(0,135,191,1) 0%, rgba(36,78,155,1) 76%, rgba(36,78,155,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#244e9b', endColorstr='#0087bf',GradientType=0 ); /* ie6-9 */
+    }
+
+    .continuaCadastro img.logo {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+
+    .continuaCadastro img.escolhe {
+        width: 90%;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 1.8rem;
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    button > span {
+        font-size: 2.5rem;
+    }
+}

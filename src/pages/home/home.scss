@@ -1,3 +1,204 @@
 page-home {
 
+    // header
+
+    ion-navbar{
+        height: 70px;
+    }
+    ion-navbar img {
+        max-width: 100%;
+    }
+
+    ion-icon {
+        color: #FFF;
+    }
+    
+    .voltar {
+        width: 30%;
+    }
+    
+    .icon-cart {
+        color: $cor-branca;
+        font-size:2.5rem;
+        font-weight: bold;
+    }
+
+    ion-navbar img{
+        max-width: 50%;
+    }
+
+    .searchbar-input {
+        width: 98%;
+        height: 35px;
+        border-radius: 5px;
+        margin-left:1%;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #a1a1a1;
+        font-weight: bold;
+        border: 0;
+    }
+
+    // content
+
+    .content {
+        margin-top:0px;
+    }
+
+    h3, h2 {
+        color: #6e6b6b;
+    }
+
+    .fixed-content{
+        margin-top: 10px !important;
+    }
+
+    // slide de produtos
+
+    .slide {
+        padding: 0;
+        margin-bottom: 20px;
+        color: #ecf0f1;
+        font-family: 'Open Sans', sans-serif;
+        //min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        //width: 100%;
+   }
+    * {
+        box-sizing: border-box;
+   }
+    .slide h1, .slide p {
+        text-align: center;
+   }
+    .slide p {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+   }
+
+    .slide a:link, a:hover, a:active, a:visited {
+        transition: color 150ms;
+        color: #95a5a6;
+        text-decoration: none;
+   }
+    .slide a:hover {
+        color: #7f8c8d;
+        text-decoration: underline;
+   }
+    .slide .row {
+        overflow: scroll;
+        overflow-y: hidden;
+        width: 100%;
+   }
+    .slide .row__inner {
+        transition: 450ms transform;
+        font-size: 0;
+        white-space: nowrap;
+        margin: 10px 0;
+        padding-bottom: 10px;
+   }
+    .slide .tile {
+        max-width: 153px;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+   }
+
+   .slide h3 {
+    font-size: 1.2rem;
+    color: #6e6b6b;
+    max-width: 100%;
+    height: 0px auto;
+   }
+    .slide .tile__img {
+        width: 250px;
+        height: 140.625px;
+        object-fit: cover;
+   }
+    .slide .tile__details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-size: 10px;
+        opacity: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+        transition: 450ms opacity;
+   }
+    .slide .tile__details:after {
+        margin-top: -25px;
+        margin-left: -25px;
+        width: 50px;
+        height: 50px;
+        border: 3px solid #ecf0f1;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1;
+   }
+    .slide .tile__details:before {
+        content: '▶';
+        left: 0;
+        width: 100%;
+        font-size: 30px;
+        margin-left: 7px;
+        margin-top: -18px;
+        text-align: center;
+        z-index: 2;
+   }
+    .slide .tile__title {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+   }
+
+    // produtos
+
+    .grid{
+        display: grid;
+        padding-left: 0 !important;
+    }
+
+    .grid-template-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-card-category {
+        margin: 5px;
+        padding: 5px 3px 1px 3px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.75);
+    }
+
+    .img-rodape {
+        margin-bottom: 50px;
+    }
+
+    .img-evento {
+        margin-top: 2px;
+        margin-left: -50px;
+        max-width: 120%;
+    }
+
+    .img-poderosos {
+        margin-top: 2px;
+        margin-left: -17px;
+        max-width: 113%;
+    }
+
+    .img-oralB {
+        margin-top: 2px;
+        margin-left: -17px;
+        max-width: 110%;
+    }
+      
 }

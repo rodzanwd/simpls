@@ -1,0 +1,147 @@
+<ion-header center>
+  <ion-navbar hideBackButton>
+    <ion-grid class="headerMenu" style="padding-right: 10px; padding-left: 10px;">
+      <ion-row>
+        <!-- voltar -->
+        <ion-col col-4>
+          <div (click)="goBack()">
+            <img class="voltar" src="assets/imgs/voltar.png">
+          </div>
+        </ion-col>
+        <!-- logo -->
+        <ion-col col-4 text-center>
+            CAIXA DE MENSAGEM
+        </ion-col>
+        <!-- cart -->
+        <ion-col col-4 text-right (click)="goCart()">
+            <ion-icon class="icon-cart" name="cart"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="mensagens">
+      <ion-segment-button value="entrada">
+        <h3>CAIXA DE MENSAGEM</h3>
+      </ion-segment-button>
+      <ion-segment-button value="favoritos">
+        <h3>FAVORITOS</h3>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div *ngIf="isTrue">
+      <ion-list>
+          <ion-item>
+            <ion-grid class="mensagem">
+              <ion-row>
+                <ion-col col-10>
+                  <h4>SUA MENSAGEM</h4>
+                  <span>DE SIMPLS</span>
+                  <p>
+                      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                  </p>
+                </ion-col>
+                <ion-col class="stars star-grey" col-2>
+                    <ion-icon name="star"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-10>
+                  <h4>SUA MENSAGEM</h4>
+                  <span>DE SIMPLS</span>
+                  <p>
+                      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                  </p>
+                </ion-col>
+                <ion-col class="stars star-yellow" col-2>
+                    <ion-icon name="star"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-10>
+                  <h4>SUA MENSAGEM</h4>
+                  <span>DE SIMPLS</span>
+                  <p>
+                      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                  </p>
+                </ion-col>
+                <ion-col class="stars star-grey" col-2>
+                    <ion-icon name="star"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+  </div>
+
+  <div [ngSwitch]="mensagens">
+      <ion-list *ngSwitchCase="'entrada'">
+        <ion-item>
+          <ion-grid class="mensagem">
+            <ion-row>
+              <ion-col col-10>
+                <h4>SUA MENSAGEM</h4>
+                <span>DE SIMPLS</span>
+                <p>
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                </p>
+              </ion-col>
+              <ion-col class="stars star-grey" col-2>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-10>
+                <h4>SUA MENSAGEM</h4>
+                <span>DE SIMPLS</span>
+                <p>
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                </p>
+              </ion-col>
+              <ion-col class="stars star-yellow" col-2>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-10>
+                <h4>SUA MENSAGEM</h4>
+                <span>DE SIMPLS</span>
+                <p>
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                </p>
+              </ion-col>
+              <ion-col class="stars star-grey" col-2>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+      <!-- Perguntas gerais -->
+      <ion-list *ngSwitchCase="'favoritos'">
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                <h4>SUA MENSAGEM</h4>
+                <span>DE SIMPLS</span>
+                <p>
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                </p>
+              </ion-col>
+              <ion-col class="stars star-yellow" col-2>
+                  <ion-icon name="star"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </div>
+</ion-content>
+
+<footer></footer>
