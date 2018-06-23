@@ -1,0 +1,8 @@
+{
+  "name": "simplsme-app",
+  "app_id": "4cc1e838",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
